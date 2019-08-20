@@ -32,11 +32,11 @@ const counterMaker = () => {
   // 3- Return the `counter` function.
  let count = 0;
   function counter(){
-     return count++;
+     return ++count ;
   }
   return counter();
-};
-return counterMaker();
+}
+console.log(counterMaker());
 
 
 // Example usage: const myCounter = counterMaker();
