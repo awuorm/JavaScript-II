@@ -34,9 +34,14 @@ const counterMaker = () => {
   function counter(){
      return ++count ;
   }
-  return counter();
+  return counter;
 }
-console.log(counterMaker());
+// console.log(counterMaker());
+let myCounter = counterMaker();
+console.log(myCounter());
+console.log(myCounter());
+console.log(myCounter());
+
 
 
 // Example usage: const myCounter = counterMaker();
